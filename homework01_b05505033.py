@@ -1,12 +1,16 @@
-# read the file from the sample.txt
-wordfile=open("sample.txt","r", encoding="utf8")
+#read the file from the sample.txt
+wordfile=open("C:\\Users\翁震軒\Desktop\sample.txt","r", encoding="utf8")
 wordtext=wordfile.read()
+#define an empty list
+sampleWordList=[""]
 #change the string into list
-sampleWordList=wordtext.split()
+sampleWord=wordtext.split()
 #HW1-1
-for sampleWordList1 in sampleWordList:
+for sampleWordList1 in sampleWord:
     if len(sampleWordList1)>5:
         print(sampleWordList1)
+#add the five or above letter words into the list
+        sampleWordList.append(sampleWordList1)
 #HW1-2
 #loop starting
 whilecount=1
